@@ -1,0 +1,6 @@
+name = Commerce No Payment Transaction
+description = A "no payment required" Commerce module that logs a payment transaction.
+package = Commerce (contrib)
+dependencies[] = commerce
+dependencies[] = commerce_payment
+core = 7.x

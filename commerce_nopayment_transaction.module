@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Commerce No Payment Transaction module methods.
+ */
+
+/**
+ * Implements hook_commerce_payment_method_info().
+ */
+function commerce_nopayment_transaction_commerce_payment_method_info() {
+  $payment_methods = array();
+
+  $payment_methods['commerce_nopayment_transaction_no_payment'] = array(
+    'base' => 'commerce_nopayment_transaction_no_payment',
+    'title' => t('No Payment Required'),
+    'description' => t('Performs a payment transaction with no payment required.'),
+    'file' => 'includes/commerce_nopayment_transaction.no_payment.inc',
+    'active' => FALSE,
+  );
+
+  return $payment_methods;
+}
